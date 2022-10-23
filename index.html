@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <!-- tab icon -->
+    <link rel="icon" href="http://example.com/favicon.png">
+
+    <!-- menu icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- zen dots font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+
+    <!-- input serif font -->
+    <link rel="stylesheet" href="https://use.typekit.net/rlv7xes.css">
+
+    <!-- dot gothic16 font -->
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'ahg7sgo',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+
+    <!--real head pro font-->
+    <link rel="stylesheet" href="https://use.typekit.net/rlv7xes.css">
+
+    <title>GLM</title>
+</head>
+<body>
+    <h1 class="logo"><a href="https://glm.g-truc.net/0.9.4/api/index.html">GLM</a></h1>
+    <span class="material-symbols-outlined" id="hamburger">menu</span>
+    <div class="menu">
+        <ul class="menu-nav">
+            <a href="https://glm.g-truc.net/0.9.4/api/index.html"><li>Main Page</li></a>
+            <a href="https://glm.g-truc.net/0.9.4/api/pages.html"><li>Related Pages</li></a>
+            <a href="https://glm.g-truc.net/0.9.4/api/modules.html"><li>Modules</li></a>
+            <a href="https://glm.g-truc.net/0.9.4/api/files.html"><li>Files</li></a>
+            <a href="https://glm.g-truc.net/0.9.4/api/a00141.html"><li>GLM Core</li></a>
+        </ul>
+    </div>
+    <div class="container">
+        <nav>
+            <ul class="nav">
+                <li><a href="https://glm.g-truc.net/0.9.4/api/index.html">Main Page</a></li>
+                <li><a href="https://glm.g-truc.net/0.9.4/api/pages.html">Related Pages</a></li>
+                <li><a href="https://glm.g-truc.net/0.9.4/api/modules.html">Modules</a></li>
+                <li><a href="https://glm.g-truc.net/0.9.4/api/files.html">Files</a></li>
+                <li><a href="https://glm.g-truc.net/0.9.4/api/a00141.html">GLM Core</a></li>
+            </ul>
+        </nav>
+        <h2>Matrix Functions</h2>
+        
+        <!-- determinant -->
+        <div class="content">
+            <div class="dormant function" id="determinate-dormant">
+                <h3>
+                    <span class="dormant-name">Determinant </span>
+                    <span class="dormant-arguments">(const &m)</span>
+                </h3>
+            </div>
+            <div class="active function" id="determinate-active">
+                <h3>
+                    <span class="active-name">determinant </span>
+                    <span class="active-arguments">(const &m)</span>
+                </h3>
+            </div>
+            <div class="uncollapsed" id="determinate-info">
+                <p class="description">Returns the determinant of a square matrix.</p>
+                <div class="funtion-info">
+                    <h4>Return Types:</h4>
+                    <ul class="info">
+                        <li>detail::tmat2x2<valType>::value_type</li>
+                        <li>detail::tmat3x3<valType>::value_type</li>
+                        <li>detail::tmat4x4<valType>::value_type</li>
+                    </ul>
+                    <h4>Argument Types:</h4>
+                    <ul class="info">
+                        <li>const detail::tmat2x2< valType ></li>
+                        <li>const detail::tmat3x3< valType ></li>
+                        <li>const detail::tmat4x4< valType ></li>
+                    </ul>
+                    <h4>Template Parameters:</h4>
+                    <ul class="info">
+                        <li>valType	Floating-point scalar types</li>
+                    </ul>
+                    <h4>See Also:</h4>
+                    <ul class="info">
+                        <li><a href="http://www.opengl.org/sdk/docs/manglsl/xhtml/determinant.xml">GLSL determinant man page</a></li>
+                        <li><a href="http://www.opengl.org/registry/doc/GLSLangSpec.4.20.8.pdf">GLSL 4.20.8 specification, section 8.6 Matrix Functions</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- inverse -->
+            <div class="dormant function" id="inverse-dormant">
+                <h3>
+                    <span class="dormant-name">Inverse </span>
+                    <span class="dormant-arguments">(const &m)</span>
+                </h3>
+            </div>
+            <div class="active function" id="inverse-active">
+                <h3>
+                    <span class="active-name">inverse </span>
+                    <span class="active-arguments">(const &m)</span>
+                </h3>
+            </div>
+            <div class="uncollapsed" id="inverse-info">
+                <p class="description">Returns the inverse of a square matrix.</p>
+                <div class="funtion-info">
+                    <h4>Return Types:</h4>
+                    <ul class="info">
+                        <li>detail::tmat2x2<valType>::value_type</li>
+                        <li>detail::tmat3x3<valType>::value_type</li>
+                        <li>detail::tmat4x4<valType>::value_type</li>
+                    </ul>
+                    <h4>Argument Types:</h4>
+                    <ul class="info">
+                        <li>const detail::tmat2x2< valType ></li>
+                        <li>const detail::tmat3x3< valType ></li>
+                        <li>const detail::tmat4x4< valType ></li>
+                    </ul>
+                    <h4>Template Parameters:</h4>
+                    <ul class="info">
+                        <li>valType	Floating-point scalar types</li>
+                    </ul>
+                    <h4>See Also:</h4>
+                    <ul class="info">
+                        <li><a href="http://www.opengl.org/sdk/docs/manglsl/xhtml/inverse.xml">GLSL inverse man page</a></li>
+                        <li><a href="http://www.opengl.org/registry/doc/GLSLangSpec.4.20.8.pdf">GLSL 4.20.8 specification, section 8.6 Matrix Functions</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- component-wise matrix multiplication -->
+            <div class="dormant function" id="matCompMult-dormant">
+                <h3>
+                    <span class="dormant-name">Matrix Component-Wise Multiplication </span>
+                    <span class="dormant-arguments">(const &x, const &y)</span>
+                </h3>
+            </div>
+            <div class="active function" id="matCompMult-active">
+                <h3>
+                    <span class="active-name">matrixCompMult </span>
+                    <span class="active-arguments">(const &x, const &y)</span>
+                </h3>
+            </div>
+            <div class="uncollapsed" id="matCompMult-info">
+                <p class="description">Multiplies matrix x by matrix y component-wise, i.e., result[i][j] is the scalar product of x[i][j] and y[i][j].</p>
+                <div class="funtion-info">
+                    <h4>Return Types:</h4>
+                    <ul class="info">
+                        <li>matType</li>
+                    </ul>
+                    <h4>Argument Types:</h4>
+                    <ul class="info">
+                        <li>const matType</li>
+                    </ul>
+                    <h4>Template Parameters:</h4>
+                    <ul class="info">
+                        <li>matType	Floating-point matrix types</li>
+                    </ul>
+                    <h4>See Also:</h4>
+                    <ul class="info">
+                        <li><a href="http://www.opengl.org/sdk/docs/manglsl/xhtml/matrixCompMult.xml">GLSL matrixCompMult man page</a></li>
+                        <li><a href="http://www.opengl.org/registry/doc/GLSLangSpec.4.20.8.pdf">GLSL 4.20.8 specification, section 8.6 Matrix Functions</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- outerProduct -->
+            <div class="dormant function" id="outerProduct-dormant">
+                <h3>
+                    <span class="dormant-name">Outer Product </span>
+                    <span class="dormant-arguments">(const &c, const &r)</span>
+                </h3>
+            </div>
+            <div class="active function" id="outerProduct-active">
+                <h3>
+                    <span class="active-name">outerProduct </span>
+                    <span class="active-arguments">(vecType const &c, vecType const &r)</span>
+                </h3>
+            </div>
+            <div class="uncollapsed" id="outerProduct-info">
+                <p class="description">Treating c as the column vector and r as the row vector, returns the cross product of c and r.</p>
+                <div class="funtion-info">
+                    <h4>Return Types:</h4>
+                    <ul class="info">
+                        <li>matType</li>
+                    </ul>
+                    <h4>Argument Types:</h4>
+                    <ul class="info">
+                        <li>const vecType</li>
+                    </ul>
+                    <h4>Template Parameters:</h4>
+                    <ul class="info">
+                        <li>matType	Floating-point scalar types</li>
+                    </ul>
+                    <h4>See Also:</h4>
+                    <ul class="info">
+                        <li><a href="http://www.opengl.org/sdk/docs/manglsl/xhtml/outerProduct.xml">GLSL outerProduct man page</a></li>
+                        <li><a href="http://www.opengl.org/registry/doc/GLSLangSpec.4.20.8.pdf">GLSL 4.20.8 specification, section 8.6 Matrix Functions</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- transpose -->
+            <div class="dormant function" id="transpose-dormant">
+                <h3>
+                    <span class="dormant-name">Transpose </span>
+                    <span class="dormant-arguments">(const &x)</span>
+                </h3>
+            </div>
+            <div class="active function" id="transpose-active">
+                <h3>
+                    <span class="active-name">transpose </span>
+                    <span class="active-arguments">(matType const &x)</span>
+                </h3>
+            </div>
+            <div class="uncollapsed" id="transpose-info">
+                <p class="description">Returns the transpose of matrix x.</p>
+                <div class="funtion-info">
+                    <h4>Return Types:</h4>
+                    <ul class="info">
+                        <li>matType::transpose_type</li>
+                    </ul>
+                    <h4>Argument Types:</h4>
+                    <ul class="info">
+                        <li>const matType</li>
+                    </ul>
+                    <h4>Template Parameters:</h4>
+                    <ul class="info">
+                        <li>matType	Floating-point matrix types</li>
+                    </ul>
+                    <h4>See Also:</h4>
+                    <ul class="info">
+                        <li><a href="http://www.opengl.org/sdk/docs/manglsl/xhtml/transpose.xml">GLSL transpose man page</a></li>
+                        <li><a href="http://www.opengl.org/registry/doc/GLSLangSpec.4.20.8.pdf">GLSL 4.20.8 specification, section 8.6 Matrix Functions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
